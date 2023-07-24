@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Payment Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="text-center py-5 bg-dark-blue text-light mb-4">
+        <!-- place navbar here -->
+        <h2>Ibis House is requesting payment</h2>
+    </header>
+    <main id="main-content">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="payment-detail">
+                        <!-- Some borders are removed -->
+                        <ul class="list-group list-group-flush border-0">
+                            <li class="list-group-item">
+                                <img src="user.png" class="img-fluid me-2" width="15" heigh="15" alt="">James Hedly</li>
+                            <li class="list-group-item">
+                                <img src="calendar.png" class="img-fluid me-2" width="15" heigh="15" alt="">Thursday,
+                                Oct. 13,
+                                2022 - Thursday, Oct. 13, 2022</li>
+                            <li class="list-group-item">
+                                <img src="moon.png" class="img-fluid me-2" width="15" heigh="15" alt="">0 Nights</li>
+                            <li class="list-group-item">
+                                <img src="dollar.png" class="img-fluid me-2" width="15" heigh="15" alt="">1,000.00 ZAR
+                                (South
+                                African Rand)</li>
+                            <li class="list-group-item">
+                                <img src="bookmark.png" class="img-fluid me-2" width="15" heigh="15" alt="">Booking are
+                                non
+                                refundable but dates can be changed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-card">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <h4 class="card-title  mb-3">
+                                    <b class="payment-ammount fw-bold">$50.10</b>
+                                </h4>
+                                <div class="form-group">
+                                    <select class="form-control" name="" id="" style="color:rgba(128, 193, 202, 1)">
+                                        <option>USD | Change Currency</option>
+                                        <option>ZAR</option>
+                                        <option>EUR</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <h6 class="card-title py-3 fw-bold"> <span>
+                                        <img src="credit-card.png" class="img-fluid me-2" width="25" alt="">
+                                    </span> Credit card detail</h6>
+                                <div class="row gy-3">
+                                    <div class="col-md-12">
+
+                                        <input type="text" class="form-control" id="cc-name" placeholder="Card Number"
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Name on card is required
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY"
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Expiration date required
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="cc-cvv" placeholder="CVV"
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Security code required
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button class="w-100 btn btn-secondary border-0 text-light bg-light-green " type="submit">Pay
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #main-content .container {
+            max-width: 960px !important;
+        }
+
+        .payment-card .form-control {
+            background: #FAFAFA 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            border: 0;
+        }
+
+        .payment-detail li.list-group-item {
+            border-bottom: 0;
+        }
+
+        .bg-dark-blue {
+            background: rgba(0, 11, 80, 1);
+        }
+
+        .bg-light-green {
+            background: rgba(128, 193, 202, 1)
+        }
+
+        .payment-card .card {
+            border-color: rgba(222, 222, 222, 1);
+        }
+    </style>
+</body>
+
+</html>
